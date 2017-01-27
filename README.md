@@ -34,7 +34,7 @@ myFileInput.onchange = () => {
 fileupload(elements, url, params, callback)
 ```
 
-- `elements` (`Array<HTMLElement>`) An array of file input elements. The files selected with these inputs will be uploaded.
-- `url` (`string`) The URL of the upload endpoint.
-- `params` (Object) Additional parameters which will be submitted as part of the form data.
-- `callback` (Function) The callback function to be invoked when the upload finished. It will receive the parsed post response as an argument.
+- `elements` (*Array\<HTMLElement\>*) An array of file input elements. The files selected with these inputs will be uploaded.
+- `url` (*string*) The URL of the upload endpoint.
+- `params` (*Object*) Additional parameters which will be submitted as part of the form data.
+- `callback` (*Function*) The callback function to be invoked when the upload finished. It will receive the parsed post response as an argument.
