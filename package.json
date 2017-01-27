@@ -1,0 +1,24 @@
+{
+  "name": "stoneage-fileupload",
+  "version": "1.0.0",
+  "description": "AJAX-like file upload for IE9 and below using form post to hidden iframe",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signavio/stoneage-fileupload.git"
+  },
+  "keywords": [
+    "ajax",
+    "file",
+    "upload",
+    "ie9",
+    "ie8",
+    "iframe"
+  ],
+  "author": "Jan-Felix Schwarz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/signavio/stoneage-fileupload/issues"
+  },
+  "homepage": "https://github.com/signavio/stoneage-fileupload#readme"
+}
