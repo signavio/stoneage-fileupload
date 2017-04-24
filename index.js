@@ -14,19 +14,6 @@ module.exports = function stoneAgeUpload(elements, url, formData, callback) {
   iframe.src = 'javascript:false;'; // to prevent warning in IE6
   document.body.appendChild(iframe);
 
-  iframe.onerror = iframe.onload = function() {
-    // try to parse response, remove iframe, and pass response to callback
-    var response;
-    try {
-      var responseStr = iframe.contentWindow.document.body.innerHTML;
-      response = JSON.parse(responseStr);
-    } catch(e) {
-      response = responseStr;
-    }
-    iframe.parentNode.removeChild(iframe);
-    callback(response);
-  };
-
   // create form
   var form = document.createElement('form');
   form.method = 'POST';
@@ -65,6 +52,19 @@ module.exports = function stoneAgeUpload(elements, url, formData, callback) {
   }
 
   form.submit();
+
+  iframe.onerror = iframe.onload = function() {
+    // try to parse response, remove iframe, and pass response to callback
+    var response;
+    try {
+      var responseStr = iframe.contentWindow.document.body.innerHTML;
+      response = JSON.parse(responseStr);
+    } catch(e) {
+      response = responseStr;
+    }
+    iframe.parentNode.removeChild(iframe);
+    callback(response);
+  };
 
   for (i = l - 1; i >= 0; --i) {
     // unset default name attributes
