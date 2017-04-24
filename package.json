@@ -1,6 +1,6 @@
 {
   "name": "stoneage-fileupload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AJAX-like file upload for IE9 and below using form post to hidden iframe",
   "main": "index.js",
   "repository": {
